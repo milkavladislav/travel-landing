@@ -21,84 +21,31 @@ const Main = () => {
         navigation={true}
         modules={[Pagination, Navigation]}
       >
-        <SwiperSlide className="slider__container">
-          <div className="title__block">
-            <h3>Explore</h3>
-            <h2>Norway</h2>
-          </div>
-          <div className="city__wrapper">
-            <a className="city__card" href="">
-              <FiMapPin />
-              <h4 className="city__card-title">Trondheim</h4>
-              <p>Plan a trip</p>
-            </a>
-            <a className="city__card" href="">
-              <FiMapPin />
-              <h4 className="city__card-title">Trondheim</h4>
-              <p>Plan a trip</p>
-            </a>
-            <a className="city__card" href="">
-              <FiMapPin />
-              <h4 className="city__card-title">Trondheim</h4>
-              <p>Plan a trip</p>
-            </a>
-          </div>
-          <img className="slider__photo" src={SlidePhoto} />
-        </SwiperSlide>
-        <SwiperSlide className="slider__container">
-          <div className="title__block">
-            <h3>Explore</h3>
-            <h2>Norway</h2>
-          </div>
-          <div className="city__wrapper">
-            <a className="city__card" href="">
-              <FiMapPin />
-              <h4 className="city__card-title">Trondheim</h4>
-              <p>Plan a trip</p>
-            </a>
-            <a className="city__card" href="">
-              <FiMapPin />
-              <h4 className="city__card-title">Trondheim</h4>
-              <p>Plan a trip</p>
-            </a>
-            <a className="city__card" href="">
-              <FiMapPin />
-              <h4 className="city__card-title">Trondheim</h4>
-              <p>Plan a trip</p>
-            </a>
-          </div>
-          <img className="slider__photo" src={SlidePhoto} />
-        </SwiperSlide>
-        <SwiperSlide className="slider__container">
-          <div className="title__block">
-            <h3>Explore</h3>
-            <h2>Norway</h2>
-          </div>
-          <div className="city__wrapper">
-            <a className="city__card" href="">
-              <FiMapPin className="city__card-icon" />
-              <div className="city__card-text">
-                <h4>Trondheim</h4>
-                <p>Plan a trip</p>
+        {Array(4)
+          .fill(null)
+          .map(() => (
+            <SwiperSlide className="slider__container">
+              <div className="title__block">
+                <h3>Explore</h3>
+                <h2>Norway</h2>
               </div>
-            </a>
-            <a className="city__card" href="">
-              <FiMapPin className="city__card-icon" />
-              <div className="city__card-text">
-                <h4>Trondheim</h4>
-                <p>Plan a trip</p>
+              <div className="city__wrapper">
+                {Array(3).fill(null).map(() => (
+                  <a
+                    className="city__card"
+                    href="https://en.wikipedia.org/wiki/Norway"
+                  >
+                    <FiMapPin className="city__card-icon" />
+                    <div className="city__card-text">
+                      <h4>Trondheim</h4>
+                      <p>Plan a trip</p>
+                    </div>
+                  </a>
+                ))}
               </div>
-            </a>
-            <a className="city__card" href="">
-              <FiMapPin className="city__card-icon" />
-              <div className="city__card-text">
-                <h4>Trondheim</h4>
-                <p>Plan a trip</p>
-              </div>
-            </a>
-          </div>
-          <img className="slider__photo" src={SlidePhoto} />
-        </SwiperSlide>
+              <img className="slider__photo" src={SlidePhoto} alt="Norway" />
+            </SwiperSlide>
+          ))}
       </Swiper>
       <Nav />
     </header>
