@@ -48,5 +48,5 @@ nav > .logo {
   cursor: pointer;
 }
 .burger__menu-logo:hover {
-  color: var(--color-light-grey);
+  color: var(--color-light-transparent-grey);
 }

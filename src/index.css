@@ -19,7 +19,10 @@ body {
   --color-white: #fff;
   --color-black: #000;
   --color-dark-grey: hsla(0, 0%, 18%, 1);
-  --color-light-grey: hsla(0, 0%, 100%, 0.3);
+  --color-grey: hsla(0, 0%, 28%, 1);
+  --color-light-transparent-grey: hsla(0, 0%, 100%, 0.3);
+  --color-light-grey: hsla(0, 0%, 100%, 0.6);
+
 
   --color-bg: #1f1f38;
   --color-bg-variant: #2c2c6c;
