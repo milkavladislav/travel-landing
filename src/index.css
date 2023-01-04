@@ -22,6 +22,8 @@ body {
   --color-grey: hsla(0, 0%, 28%, 1);
   --color-light-transparent-grey: hsla(0, 0%, 100%, 0.3);
   --color-light-grey: hsla(0, 0%, 100%, 0.6);
+  --color-white-grey: hsla(0, 0%, 61%, 1);
+
 
 
   --color-bg: #1f1f38;
