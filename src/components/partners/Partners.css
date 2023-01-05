@@ -1,0 +1,76 @@
+.partners__logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+}
+
+.comments {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5vh 5vw;
+  gap: 3vw;
+  border-radius: 1rem;
+  background: url("../../assets/partners/background.png");
+  background-size: cover;
+}
+.comment__card {
+  position: relative;
+}
+
+.comment__card-commenter {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.comment__card-commenter > img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.comment__card-commenter-about > h5 {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: var(--color-white);
+}
+
+.comment__card-commenter-about > p {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: var(--color-white);
+  opacity: 0.7;
+}
+
+.comment__card-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  color: var(--color-grey);
+  position: absolute;
+  display: grid;
+  top: 2rem;
+  padding: 2rem;
+  left: 0rem;
+}
+
+.comment__card-text::before {
+  content: "“";
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4rem;
+  color: var(--color-orange);
+  opacity: 0.4;
+}

@@ -44,6 +44,7 @@ form {
 }
 
 .apartment__result-cards {
+  position: relative;
   display: flex;
   width: 90vw;
   flex-direction: row;
@@ -73,4 +74,15 @@ form {
   font-size: 1rem;
   line-height: 1.5rem;
   color: var(--color-white-grey);
+}
+
+.apartment__result-cards::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  background: var(--color-background-grey);
+  top: 10rem;
+  height: 50rem;
+  left: -5vw;
+  width: 200%;
 }
