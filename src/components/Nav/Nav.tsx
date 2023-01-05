@@ -9,7 +9,7 @@ interface IMenuItem {
   title: string;
 }
 
-const menuList: IMenuItem[] = [
+export const menuList: IMenuItem[] = [
   {
     link: "#destinations",
     title: "Destination",
@@ -30,7 +30,7 @@ const menuList: IMenuItem[] = [
 
 const Nav = () => {
   return (
-    <nav>
+    <nav id="destinations">
       <div className="logo">
         <img src={Logo} alt="logo" />
         <p className="logo__text">TRAVELx</p>
@@ -43,7 +43,7 @@ const Nav = () => {
         ))}
       </div>
       <div className="burger__menu">
-        <BiMenuAltRight className="burger__menu-logo"/>
+        <BiMenuAltRight className="burger__menu-logo" />
       </div>
     </nav>
   );
