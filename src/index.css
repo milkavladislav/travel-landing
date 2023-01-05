@@ -23,8 +23,7 @@ body {
   --color-light-transparent-grey: hsla(0, 0%, 100%, 0.3);
   --color-light-grey: hsla(0, 0%, 100%, 0.6);
   --color-white-grey: hsla(0, 0%, 61%, 1);
-
-
+  --color-orange: hsla(32, 100%, 56%, 1);
 
   --color-bg: #1f1f38;
   --color-bg-variant: #2c2c6c;

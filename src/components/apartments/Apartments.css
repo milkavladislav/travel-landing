@@ -1,0 +1,76 @@
+form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3vw;
+}
+
+.options__element > label {
+  font-weight: 600;
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+  letter-spacing: 0.2rem;
+  color: var(--color-white-grey);
+  text-transform: uppercase;
+}
+
+.form__option {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 3rem;
+  letter-spacing: 0.1rem;
+  color: var(--color-grey);
+}
+
+.form__search-button {
+  margin-top: 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1rem;
+  letter-spacing: 0.3rem;
+  color: var(--color-white);
+  text-transform: uppercase;
+  background: var(--color-dark-grey);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.form__search-button:hover {
+  background: var(--color-grey);
+}
+
+.option__arrow {
+  margin-right: 1rem;
+  color: var(--color-white-grey);
+}
+
+.apartment__result-cards {
+  display: flex;
+  width: 90vw;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3vw;
+}
+
+.apartment__card > img {
+  width: 500px;
+}
+
+.apartment__card-description {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+}
+
+.apartment__card-description > header {
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
+
+.apartment__card-description > p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--color-white-grey);
+}
