@@ -1,13 +1,7 @@
 import React from "react";
 import { Controller, useForm } from "react-hook-form";
-import Select, { GroupBase, OptionsOrGroups } from "react-select";
+import Select from "react-select";
 import { IoIosArrowDown } from "react-icons/io";
-
-const options = [
-  { value: "chocolate", label: "Chocolate" },
-  { value: "strawberry", label: "Strawberry" },
-  { value: "vanilla", label: "Vanilla" },
-];
 
 interface IOption {
   label: string;
