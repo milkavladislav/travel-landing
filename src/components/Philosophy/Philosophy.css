@@ -46,3 +46,51 @@
   line-height: 1.5rem;
   color: var(--color-white-grey);
 }
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+  .philosophy__photo {
+    width: 50vw;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  .philosophy__option {
+    gap: 2vw;
+  }
+
+  .philosophy__option > h3 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  .philosophy__option-text > h4 {
+    font-size: 1.5rem;
+  }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 600px) {
+  .philosophy__content {
+    padding: 1rem;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .philosophy__photo {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  .philosophy__option > h3 {
+    font-size: 1.7rem;
+    line-height: 0.2rem;
+  }
+
+  .philosophy__option-text > h4 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}

@@ -103,7 +103,7 @@ const Main = () => {
       </Swiper>
       <Nav />
       <MainSocials />
-      <a className="seeMore__link" href="/#">
+      <a className="seeMore__link" href="#activities">
         <CgArrowLongDown className="seeMore__link-arrow" />
         See More
       </a>

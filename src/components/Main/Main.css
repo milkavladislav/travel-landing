@@ -115,3 +115,73 @@
 .seeMore__link-arrow {
   transform: rotate(90deg);
 }
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+  .title__block > h2 {
+    font-size: 8rem;
+    line-height: 5rem;
+  }
+
+  .title__block > h3 {
+    font-size: 1.4rem;
+  }
+
+  .city__card {
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .city__wrapper {
+    padding: 0 10rem;
+  }
+
+  .seeMore__link {
+    font-size: 1rem;
+    left: 0.3rem;
+  }
+
+  .header__socials > a > * {
+    color: var(--color-white);
+    font-size: 1rem;
+  }
+  .header__socials {
+    gap: 1rem;
+    top: 60vh;
+  }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 600px) {
+  .title__block > h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .title__block > h3 {
+    font-size: 1rem;
+  }
+
+  .slider__photo {
+    object-fit: cover;
+  }
+
+  .header__socials {
+    display: none;
+  }
+
+  .city__wrapper {
+    grid-template-columns: 1fr;
+    padding: 0 5rem;
+    top: 50vh
+  }
+
+  .city__card {
+    gap: 2rem;
+  }
+
+  .seeMore__link {
+    font-size: 0.8rem;
+    left: -0.5rem;
+  }
+}

@@ -23,3 +23,33 @@
   color: var(--color-light-grey);
   font-size: 1rem;
 }
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+  .activity__card-text {
+    bottom: 2rem;
+    left: 1.5rem;
+  }
+
+  .activity__card-text > h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 600px) {
+  .activity__card-img {
+    height: 75vh;
+    width: 75vw;
+  }
+  .activity__card-text {
+    bottom: 2rem;
+    left: 1.5rem;
+  }
+
+  .activity__card-text > h4 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}

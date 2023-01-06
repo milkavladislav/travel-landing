@@ -2,8 +2,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 5vw;
+  margin: 2rem;
+  width: 100%;
 }
 
 .comments {
@@ -73,4 +76,11 @@
   font-size: 4rem;
   color: var(--color-orange);
   opacity: 0.4;
+}
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+  .partners__logos {
+    margin: 2rem 0;
+  }
 }

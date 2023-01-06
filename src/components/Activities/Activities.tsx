@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation } from "swiper";
+import { FreeMode, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import PartWrapper from "../common/PartWrapper/PartWrapper";
 
@@ -10,11 +10,12 @@ import Skiing from "../../assets/activities/Skiing.png";
 import Staycation from "../../assets/activities/Staycation.jpg";
 import DuckTours from "../../assets/activities/DuckTours.jpg";
 import Wildlife from "../../assets/activities/Wildlife.jpg";
+import { useMediaQuery } from "react-responsive";
 
 import "./Activities.css";
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/free-mode";
 
 interface IActivity {
   name: string;
@@ -61,6 +62,9 @@ const activities: IActivity[] = [
 ];
 
 const Activities = () => {
+  const isMobile = useMediaQuery({
+    query: "(max-width: 600px)",
+  });
   return (
     <PartWrapper
       subtitle={"Hundred of"}
@@ -69,11 +73,11 @@ const Activities = () => {
     >
       <Swiper
         className="slider"
-        slidesPerView={4}
+        slidesPerView={isMobile ? 1.2 : 4}
         loop={true}
-        centeredSlides={true}
+        freeMode={true}
         navigation={true}
-        modules={[Navigation]}
+        modules={[FreeMode, Navigation]}
       >
         {activities.map(({ name, number, photo }) => (
           <SwiperSlide>

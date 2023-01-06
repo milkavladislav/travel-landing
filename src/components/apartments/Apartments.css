@@ -87,3 +87,50 @@ form {
   left: -5vw;
   width: 200%;
 }
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+  .apartment__result-cards {
+    width: 100%;
+    padding: 1rem;
+  }
+  .apartment__card > img {
+    width: 350px;
+  }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 600px) {
+  .apartment__result-cards {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    gap: 3vh;
+  }
+  .apartment__card > img {
+    width: 100%;
+  }
+  .apartment__card-description > p {
+    line-height: 1rem;
+  }
+
+  form {
+    margin-top: 1rem;
+    grid-template-columns: 1fr;
+    gap: 3vw;
+  }
+
+  .form__search-button {
+    height: 4rem;
+  }
+
+  .options__element > label {
+    padding-left: 0.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .apartment__result-cards::after {
+    height: 80rem;
+  }
+}

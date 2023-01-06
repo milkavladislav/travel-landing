@@ -47,6 +47,25 @@ nav > .logo {
   color: var(--color-white);
   cursor: pointer;
 }
+
 .burger__menu-logo:hover {
   color: var(--color-light-transparent-grey);
+}
+
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+  .menu__list > a {
+    font-size: 1rem;
+  }
+  .logo > img {
+    height: 2.5rem
+  }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 600px) {
+  .menu__list {
+   display: none;
+  }
 }
