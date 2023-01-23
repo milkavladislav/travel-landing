@@ -1,3 +1,5 @@
+Figma: [link](https://www.figma.com/file/aCs4SIsCbuRIMmdx7oWyAg/Travel-Landing-Page?t=ziryxdBxfm8H6hLz-1)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
